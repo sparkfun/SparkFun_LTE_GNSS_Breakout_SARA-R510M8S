@@ -47,7 +47,7 @@ The board's 3.3V current draw can be monitored via the **MEAS** header pins. Ope
 
 _**Important Note**: **VCCIO** is 1.8V. You may need to connect it to an analog input to sense the voltage correctly._
 
-_**Important Note**: **3V3EN** is pulled-up to VIN via a 100K resistor. We recommend using a switch or open-collector / open-drain output to pull **3V3EN** low._
+_**Important Note**: **3V3EN** is pulled-up to VIN (5V) via a 100K resistor. We recommend using a switch or open-collector / open-drain output to pull **3V3EN** low._
 
 ## Switches
 
@@ -56,7 +56,7 @@ _**Important Note**: **3V3EN** is pulled-up to VIN via a 100K resistor. We recom
 
 ## GNSS Antenna Power
 
-The board provides 3.3V power for an active GNSS antenna. By default the antenna power is enabled whenever the SARA in on. You can reconfigure the **ANT GNSS PWR**
+The board provides 3.3V power for an active GNSS antenna. By default the antenna power is enabled whenever the SARA is on. You can reconfigure the **ANT GNSS PWR**
 split pad to optionally control the antenna power via the SARA's GPIO2 pin.
 
 The GPIO2 pin can be controlled using the **+UGPIOC=23,0,1** command.
