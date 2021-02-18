@@ -41,10 +41,13 @@ The board's 3.3V current draw can be monitored via the **MEAS** header pins. Ope
 - **INT** - by default this pin is connected to the SARA's bi-directional **EXT INT** pin. It can optionally be connected to **GPIO3** by reconfiguring the **SARA INT** split pad.
 - **~RESET** - pull low and release to reset the SARA.
 - **SARA I<sup>2</sup>C** - provides access to the SARA's I<sup>2</sup>C SDA and SCL pins.
+- **3V3EN** - pull this pin low to disable the 3.3V supply completely. _Note: you may want to turn the SARA off using the **SARA On** pin first, so it disconnects from the network correctly._
 
 **NI**, **TP**, **SARA On**, **INT**, **~RESET**, **SDA** and **SCL** are all 3.3V. Level-shifting circuits connect them to the SARA's 1.8V I/O pins.
 
 _**Important Note**: **VCCIO** is 1.8V. You may need to connect it to an analog input to sense the voltage correctly._
+
+_**Important Note**: **3V3EN** is pulled-up to VIN via a 100K resistor. We recommend using a switch or open-collector / open-drain output to pull **3V3EN** low._
 
 ## Switches
 
