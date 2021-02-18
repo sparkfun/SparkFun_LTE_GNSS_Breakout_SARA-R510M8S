@@ -1,4 +1,4 @@
-# MicroMod Asset Tracker Carrier Board
+# u-blox SARA-R510M8S Breakout
 
 A breakout for the u-blox SARA-R510M8S cellular LTE GNSS combo module with secure cloud.
 
@@ -8,12 +8,12 @@ A breakout for the u-blox SARA-R510M8S cellular LTE GNSS combo module with secur
 
 ![Dimensions.png](img/Dimensions.png)
 
-The u-blox SARA-R510M8S module is a secure cloud LTE Cat M1, LTE Cat NB2 solution based on u-blox's UBX-R5 cellular chipset with an integrated
-u-blox M8 GNSS receiver chip and a separate GNSS antenna interface.
+The u-blox SARA-R510M8S module is a secure cloud LTE Cat M1, LTE Cat NB2 solution based on u-blox's UBX-R5 cellular chipset.
+The SARA-R510M8S has an integrated u-blox M8 GNSS receiver chip and a separate GNSS antenna interface.
 
 The SARA-R5's UART interface can be configured into one of five variants, providing connectivity over one or two UARTs. A separate USB port
 provides access to the SARA's trace log for diagnostic purposes. This breakout provides access to all three interfaces (UART1, UART2 and SARA Diag)
-via three separate USB-C connections. All eight 3.3V serial signals are available on a 0.1"-pitch header.
+via three separate USB-C connections. All eight 3.3V serial signals are available on a 0.1"-pitch breakout header.
 
 ## UART 1 & 2
 
@@ -27,7 +27,7 @@ The serial signals on the breakout pins are all 3.3V. Level-shifting circuits co
 
 ## Power Options
 
-The board can draw 5V power from any or all of the USB-C connectors. Optionally, you can provide power via the ** VEXT** breakout pin: 3.7V Min; 6.0V Max.
+The board can draw 5V power from any or all of the USB-C connectors. Optionally, you can provide power via the **V EXT** breakout pin: 3.7V Min; 6.0V Max.
 
 If you want to use **V EXT** as an output, you can bypass the DVEXT protection diode by closing the **V EXT Diode** solder split pad.
 
@@ -35,19 +35,29 @@ The board's 3.3V current draw can be monitored via the **MEAS** header pins. Ope
 
 ## Additional Breakout Pins
 
-- **NI** - Network Indicator will be _low_ when the network is available.
+- **NI** - Network Indicator will be _low_ when the SARA is on and the network is available.
 - **TP** - GNSS Timing Pulse (PPS) pin will pulse low/high when configured by the **+UTIME=1,1** command. Please see the [AT Commands Manual](./Documents/SARA-R5_ATCommands_(UBX-19047455).pdf) for more details.
-- **SARA On** - pull low for 5 seconds then release to turn the SARA off. Pull low briefly again to turn the SARA back on.
+- **SARA On** - pull low for 5 seconds then release to turn the SARA off. Pull low briefly again to turn the SARA back on. You can tell if the SARA is powered by monitoring the **VCCIO** 1.8V pin.
 - **INT** - by default this pin is connected to the SARA's bi-directional **EXT INT** pin. It can optionally be connected to **GPIO3** by reconfiguring the **SARA INT** split pad.
 - **~RESET** - pull low and release to reset the SARA.
 - **SARA I<sup>2</sup>C** - provides access to the SARA's I<sup>2</sup>C SDA and SCL pins.
 
 **NI**, **TP**, **SARA On**, **INT**, **~RESET**, **SDA** and **SCL** are all 3.3V. Level-shifting circuits connect them to the SARA's 1.8V I/O pins.
 
+_**Important Note**: **VCCIO** is 1.8V. You may need to connect it to an analog input to sense the voltage correctly._
+
 ## Switches
 
 - **Reset** - pressing this switch will reset the SARA.
 - **SARA On** - pressing and holding this switch for five seconds will turn the SARA off. Press briefly to turn the SARA back on again.
+
+## GNSS Antenna Power
+
+The board provides 3.3V power for an active GNSS antenna. By default the antenna power is enabled whenever the SARA in on. You can reconfigure the **ANT GNSS PWR**
+split pad to optionally control the antenna power via the SARA's GPIO2 pin.
+
+The GPIO2 pin can be controlled using the **+UGPIOC=23,0,1** command.
+Please see the [AT Commands Manual](./Documents/SARA-R5_ATCommands_(UBX-19047455).pdf) for more details.
 
 ## Repository Contents
 
