@@ -1,4 +1,4 @@
-# u-blox SARA-R510M8S Breakout
+# SparkFun LTE GNSS Breakout - SARA-R510M8S
 
 A breakout for the u-blox SARA-R510M8S cellular LTE GNSS combo module with secure cloud.
 
