@@ -25594,6 +25594,10 @@ Why hasn't anyone added the cutout polygons directly to the connector footprint?
 <part name="DVEXT" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NO" device="_SILK" package3d_urn="urn:adsk.eagle:package:39279/1"/>
 <part name="JP2" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_3_1-NC_TRACE" device="_SILK" package3d_urn="urn:adsk.eagle:package:39288/1"/>
 <part name="SUPPLY18" library="SparkFun-PowerSymbols" deviceset="VCCIO" device=""/>
+<part name="R17" library="SparkFun-Resistors" deviceset="100KOHM" device="-0603-1/10W-1%" value="100k"/>
+<part name="R19" library="SparkFun-Resistors" deviceset="100KOHM" device="-0603-1/10W-1%" value="100k"/>
+<part name="GND30" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="GND23" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -25610,7 +25614,7 @@ Why hasn't anyone added the cutout polygons directly to the connector footprint?
 <wire x1="208.28" y1="218.44" x2="431.8" y2="218.44" width="0.2032" layer="97" style="longdash"/>
 <wire x1="45.72" y1="218.44" x2="45.72" y2="111.76" width="0.2032" layer="97" style="longdash"/>
 <text x="351.028" y="11.43" size="2.54" layer="94" font="vector">Paul Clark</text>
-<text x="421.64" y="7.112" size="2.54" layer="94" font="vector">V01</text>
+<text x="421.64" y="7.112" size="2.54" layer="94" font="vector">V10</text>
 <text x="64.77" y="237.744" size="1.778" layer="97" font="vector" align="center">VIN: 3.7-6.0V
 IOUT(Max): 1.0A</text>
 <text x="322.834" y="271.526" size="2.54" layer="94" font="vector" align="center">LEDs</text>
@@ -25681,7 +25685,7 @@ as the prepreg thickness is &gt;= 200µm</text>
 Iq = 50µA </text>
 <wire x1="330.2" y1="114.3" x2="431.8" y2="114.3" width="0.2032" layer="97" style="longdash"/>
 <text x="190.754" y="162.306" size="2.54" layer="94" font="vector" align="center">SARA Level Shifting</text>
-<text x="205.359" y="14.351" size="1.9304" layer="97" font="vector" align="top-right">Change jumper to reverse
+<text x="200.279" y="9.271" size="1.9304" layer="97" font="vector" align="top-right">Change jumper to reverse
 the direction of DSR for
 2 UART communication</text>
 <text x="199.39" y="51.562" size="1.524" layer="97" font="vector" ratio="15" rot="R180" align="bottom-center">SARA VCCIO is 1.8V</text>
@@ -26271,8 +26275,8 @@ to the GNSS antenna</text>
 <instance part="SUPPLY30" gate="G$1" x="177.8" y="91.44" smashed="yes">
 <attribute name="VALUE" x="177.8" y="94.234" size="1.778" layer="96" font="vector" align="bottom-center"/>
 </instance>
-<instance part="SUPPLY31" gate="G$1" x="259.08" y="83.82" smashed="yes">
-<attribute name="VALUE" x="259.08" y="86.614" size="1.778" layer="96" font="vector" align="bottom-center"/>
+<instance part="SUPPLY31" gate="G$1" x="254" y="83.82" smashed="yes">
+<attribute name="VALUE" x="254" y="86.614" size="1.778" layer="96" font="vector" align="bottom-center"/>
 </instance>
 <instance part="SUPPLY35" gate="G$1" x="177.8" y="58.42" smashed="yes">
 <attribute name="VALUE" x="177.8" y="61.214" size="1.778" layer="96" font="vector" align="bottom-center"/>
@@ -26364,17 +26368,17 @@ to the GNSS antenna</text>
 <instance part="SUPPLY43" gate="G$1" x="213.36" y="119.38" smashed="yes">
 <attribute name="VALUE" x="213.36" y="122.174" size="1.778" layer="96" font="vector" align="bottom-center"/>
 </instance>
-<instance part="TP1" gate="G$1" x="200.66" y="66.04" smashed="yes" rot="R270">
-<attribute name="NAME" x="201.93" y="68.58" size="1.778" layer="95" font="vector" rot="R270"/>
+<instance part="TP1" gate="G$1" x="198.12" y="83.82" smashed="yes" rot="R90">
+<attribute name="NAME" x="196.85" y="81.28" size="1.778" layer="95" font="vector" rot="R90"/>
 </instance>
-<instance part="TP2" gate="G$1" x="205.74" y="66.04" smashed="yes" rot="R270">
-<attribute name="NAME" x="207.01" y="68.58" size="1.778" layer="95" font="vector" rot="R270"/>
+<instance part="TP2" gate="G$1" x="203.2" y="83.82" smashed="yes" rot="R90">
+<attribute name="NAME" x="201.93" y="81.28" size="1.778" layer="95" font="vector" rot="R90"/>
 </instance>
-<instance part="TP3" gate="G$1" x="210.82" y="66.04" smashed="yes" rot="R270">
-<attribute name="NAME" x="212.09" y="68.58" size="1.778" layer="95" font="vector" rot="R270"/>
+<instance part="TP3" gate="G$1" x="208.28" y="83.82" smashed="yes" rot="R90">
+<attribute name="NAME" x="207.01" y="81.28" size="1.778" layer="95" font="vector" rot="R90"/>
 </instance>
-<instance part="TP4" gate="G$1" x="215.9" y="66.04" smashed="yes" rot="R270">
-<attribute name="NAME" x="217.17" y="68.58" size="1.778" layer="95" font="vector" rot="R270"/>
+<instance part="TP4" gate="G$1" x="213.36" y="83.82" smashed="yes" rot="R90">
+<attribute name="NAME" x="212.09" y="81.28" size="1.778" layer="95" font="vector" rot="R90"/>
 </instance>
 <instance part="TP9" gate="G$1" x="198.12" y="139.7" smashed="yes" rot="R270">
 <attribute name="NAME" x="199.39" y="142.24" size="1.778" layer="95" font="vector" rot="R270"/>
@@ -26382,17 +26386,17 @@ to the GNSS antenna</text>
 <instance part="TP10" gate="G$1" x="193.04" y="139.7" smashed="yes" rot="R270">
 <attribute name="NAME" x="194.31" y="142.24" size="1.778" layer="95" font="vector" rot="R270"/>
 </instance>
-<instance part="TP14" gate="G$1" x="193.04" y="22.86" smashed="yes" rot="R270">
-<attribute name="NAME" x="194.31" y="25.4" size="1.778" layer="95" font="vector" rot="R270"/>
+<instance part="TP14" gate="G$1" x="198.12" y="38.1" smashed="yes" rot="R90">
+<attribute name="NAME" x="196.85" y="35.56" size="1.778" layer="95" font="vector" rot="R90"/>
 </instance>
-<instance part="TP15" gate="G$1" x="198.12" y="22.86" smashed="yes" rot="R270">
-<attribute name="NAME" x="199.39" y="25.4" size="1.778" layer="95" font="vector" rot="R270"/>
+<instance part="TP15" gate="G$1" x="203.2" y="38.1" smashed="yes" rot="R90">
+<attribute name="NAME" x="201.93" y="35.56" size="1.778" layer="95" font="vector" rot="R90"/>
 </instance>
-<instance part="TP16" gate="G$1" x="203.2" y="22.86" smashed="yes" rot="R270">
-<attribute name="NAME" x="204.47" y="25.4" size="1.778" layer="95" font="vector" rot="R270"/>
+<instance part="TP16" gate="G$1" x="208.28" y="38.1" smashed="yes" rot="R90">
+<attribute name="NAME" x="207.01" y="35.56" size="1.778" layer="95" font="vector" rot="R90"/>
 </instance>
-<instance part="TP17" gate="G$1" x="208.28" y="22.86" smashed="yes" rot="R270">
-<attribute name="NAME" x="209.55" y="25.4" size="1.778" layer="95" font="vector" rot="R270"/>
+<instance part="TP17" gate="G$1" x="213.36" y="38.1" smashed="yes" rot="R90">
+<attribute name="NAME" x="212.09" y="35.56" size="1.778" layer="95" font="vector" rot="R90"/>
 </instance>
 <instance part="R18" gate="G$1" x="276.86" y="139.7" smashed="yes" rot="R270">
 <attribute name="NAME" x="278.384" y="139.7" size="1.778" layer="95" font="vector" rot="R270" align="bottom-center"/>
@@ -26401,46 +26405,46 @@ to the GNSS antenna</text>
 <instance part="GND67" gate="1" x="276.86" y="129.54" smashed="yes">
 <attribute name="VALUE" x="276.86" y="129.286" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
-<instance part="IC1" gate="G$1" x="236.22" y="76.2" smashed="yes">
-<attribute name="NAME" x="234.95" y="91.44" size="1.778" layer="95" font="vector" align="center-left"/>
-<attribute name="VALUE" x="227.33" y="88.9" size="1.778" layer="96" font="vector" align="center-left"/>
+<instance part="IC1" gate="G$1" x="231.14" y="76.2" smashed="yes">
+<attribute name="NAME" x="229.87" y="91.44" size="1.778" layer="95" font="vector" align="center-left"/>
+<attribute name="VALUE" x="222.25" y="88.9" size="1.778" layer="96" font="vector" align="center-left"/>
 </instance>
-<instance part="GND56" gate="1" x="251.46" y="58.42" smashed="yes">
-<attribute name="VALUE" x="251.46" y="58.166" size="1.778" layer="96" font="vector" align="top-center"/>
+<instance part="GND56" gate="1" x="246.38" y="53.34" smashed="yes">
+<attribute name="VALUE" x="246.38" y="53.086" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
-<instance part="GND70" gate="1" x="223.52" y="58.42" smashed="yes">
-<attribute name="VALUE" x="223.52" y="58.166" size="1.778" layer="96" font="vector" align="top-center"/>
+<instance part="GND70" gate="1" x="218.44" y="53.34" smashed="yes">
+<attribute name="VALUE" x="218.44" y="53.086" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
-<instance part="SUPPLY55" gate="G$1" x="220.98" y="86.36" smashed="yes">
-<attribute name="VALUE" x="220.98" y="89.154" size="1.778" layer="96" font="vector" align="bottom-center"/>
+<instance part="SUPPLY55" gate="G$1" x="215.9" y="86.36" smashed="yes">
+<attribute name="VALUE" x="215.9" y="89.154" size="1.778" layer="96" font="vector" align="bottom-center"/>
 </instance>
-<instance part="SUPPLY56" gate="G$1" x="254" y="86.36" smashed="yes">
-<attribute name="VALUE" x="254" y="89.154" size="1.778" layer="96" font="vector" align="bottom-center"/>
+<instance part="SUPPLY56" gate="G$1" x="248.92" y="86.36" smashed="yes">
+<attribute name="VALUE" x="248.92" y="89.154" size="1.778" layer="96" font="vector" align="bottom-center"/>
 </instance>
-<instance part="IC2" gate="G$1" x="236.22" y="33.02" smashed="yes">
-<attribute name="NAME" x="234.95" y="48.26" size="1.778" layer="95" font="vector" align="center-left"/>
-<attribute name="VALUE" x="227.33" y="45.72" size="1.778" layer="96" font="vector" align="center-left"/>
+<instance part="IC2" gate="G$1" x="231.14" y="30.48" smashed="yes">
+<attribute name="NAME" x="229.87" y="45.72" size="1.778" layer="95" font="vector" align="center-left"/>
+<attribute name="VALUE" x="222.25" y="43.18" size="1.778" layer="96" font="vector" align="center-left"/>
 </instance>
-<instance part="SUPPLY57" gate="G$1" x="254" y="43.18" smashed="yes">
-<attribute name="VALUE" x="254" y="45.974" size="1.778" layer="96" font="vector" align="bottom-center"/>
+<instance part="SUPPLY57" gate="G$1" x="248.92" y="40.64" smashed="yes">
+<attribute name="VALUE" x="248.92" y="43.434" size="1.778" layer="96" font="vector" align="bottom-center"/>
 </instance>
-<instance part="SUPPLY58" gate="G$1" x="259.08" y="40.64" smashed="yes">
-<attribute name="VALUE" x="259.08" y="43.434" size="1.778" layer="96" font="vector" align="bottom-center"/>
+<instance part="SUPPLY58" gate="G$1" x="254" y="38.1" smashed="yes">
+<attribute name="VALUE" x="254" y="40.894" size="1.778" layer="96" font="vector" align="bottom-center"/>
 </instance>
-<instance part="GND29" gate="1" x="251.46" y="15.24" smashed="yes">
-<attribute name="VALUE" x="251.46" y="14.986" size="1.778" layer="96" font="vector" align="top-center"/>
+<instance part="GND29" gate="1" x="246.38" y="5.08" smashed="yes">
+<attribute name="VALUE" x="246.38" y="4.826" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
-<instance part="GND71" gate="1" x="223.52" y="15.24" smashed="yes">
-<attribute name="VALUE" x="223.52" y="14.986" size="1.778" layer="96" font="vector" align="top-center"/>
+<instance part="GND71" gate="1" x="218.44" y="5.08" smashed="yes">
+<attribute name="VALUE" x="218.44" y="4.826" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
-<instance part="SUPPLY59" gate="G$1" x="220.98" y="43.18" smashed="yes">
-<attribute name="VALUE" x="220.98" y="45.974" size="1.778" layer="96" font="vector" align="bottom-center"/>
+<instance part="SUPPLY59" gate="G$1" x="215.9" y="40.64" smashed="yes">
+<attribute name="VALUE" x="215.9" y="43.434" size="1.778" layer="96" font="vector" align="bottom-center"/>
 </instance>
-<instance part="DSR_DIR" gate="G$1" x="213.36" y="17.78" smashed="yes" rot="R180">
-<attribute name="NAME" x="210.82" y="17.399" size="1.778" layer="95" font="vector" rot="R180"/>
+<instance part="DSR_DIR" gate="G$1" x="208.28" y="15.24" smashed="yes" rot="R180">
+<attribute name="NAME" x="205.74" y="14.859" size="1.778" layer="95" font="vector" rot="R180"/>
 </instance>
-<instance part="GND74" gate="1" x="213.36" y="7.62" smashed="yes">
-<attribute name="VALUE" x="213.36" y="7.366" size="1.778" layer="96" font="vector" align="top-center"/>
+<instance part="GND74" gate="1" x="208.28" y="5.08" smashed="yes">
+<attribute name="VALUE" x="208.28" y="4.826" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
 <instance part="JP19" gate="G$1" x="198.12" y="109.22" smashed="yes" rot="R180">
 <attribute name="NAME" x="195.58" y="108.839" size="1.778" layer="95" font="vector" rot="R180"/>
@@ -26613,6 +26617,20 @@ to the GNSS antenna</text>
 </instance>
 <instance part="SUPPLY18" gate="G$1" x="96.52" y="30.48" smashed="yes">
 <attribute name="VALUE" x="96.52" y="33.274" size="1.778" layer="96" font="vector" align="bottom-center"/>
+</instance>
+<instance part="R17" gate="G$1" x="251.46" y="17.78" smashed="yes" rot="R90">
+<attribute name="NAME" x="252.984" y="17.78" size="1.778" layer="95" font="vector" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="255.524" y="17.78" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+</instance>
+<instance part="R19" gate="G$1" x="251.46" y="63.5" smashed="yes" rot="R90">
+<attribute name="NAME" x="252.984" y="63.5" size="1.778" layer="95" font="vector" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="255.524" y="63.5" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+</instance>
+<instance part="GND30" gate="1" x="251.46" y="53.34" smashed="yes">
+<attribute name="VALUE" x="251.46" y="53.086" size="1.778" layer="96" font="vector" align="top-center"/>
+</instance>
+<instance part="GND23" gate="1" x="251.46" y="5.08" smashed="yes">
+<attribute name="VALUE" x="251.46" y="4.826" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
 </instances>
 <busses>
@@ -26916,44 +26934,34 @@ to the GNSS antenna</text>
 </segment>
 <segment>
 <pinref part="GND56" gate="1" pin="GND"/>
-<wire x1="251.46" y1="60.96" x2="251.46" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="246.38" y1="55.88" x2="246.38" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="!OE"/>
-<wire x1="251.46" y1="66.04" x2="248.92" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="246.38" y1="66.04" x2="243.84" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="GND"/>
-<wire x1="248.92" y1="68.58" x2="251.46" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="251.46" y1="68.58" x2="251.46" y2="66.04" width="0.1524" layer="91"/>
-<junction x="251.46" y="66.04"/>
+<wire x1="243.84" y1="68.58" x2="246.38" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="246.38" y1="68.58" x2="246.38" y2="66.04" width="0.1524" layer="91"/>
+<junction x="246.38" y="66.04"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="DIR2"/>
-<wire x1="226.06" y1="81.28" x2="223.52" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="81.28" x2="218.44" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="GND70" gate="1" pin="GND"/>
-<wire x1="223.52" y1="81.28" x2="223.52" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="81.28" x2="218.44" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="DIR4"/>
-<wire x1="223.52" y1="66.04" x2="223.52" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="226.06" y1="66.04" x2="223.52" y2="66.04" width="0.1524" layer="91"/>
-<junction x="223.52" y="66.04"/>
-</segment>
-<segment>
-<pinref part="IC2" gate="G$1" pin="!OE"/>
-<wire x1="248.92" y1="22.86" x2="251.46" y2="22.86" width="0.1524" layer="91"/>
-<pinref part="GND29" gate="1" pin="GND"/>
-<wire x1="251.46" y1="22.86" x2="251.46" y2="17.78" width="0.1524" layer="91"/>
-<pinref part="IC2" gate="G$1" pin="GND"/>
-<wire x1="248.92" y1="25.4" x2="251.46" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="251.46" y1="25.4" x2="251.46" y2="22.86" width="0.1524" layer="91"/>
-<junction x="251.46" y="22.86"/>
+<wire x1="218.44" y1="66.04" x2="218.44" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="66.04" x2="218.44" y2="66.04" width="0.1524" layer="91"/>
+<junction x="218.44" y="66.04"/>
 </segment>
 <segment>
 <pinref part="IC2" gate="G$1" pin="DIR1"/>
-<wire x1="226.06" y1="40.64" x2="223.52" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="38.1" x2="218.44" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="GND71" gate="1" pin="GND"/>
-<wire x1="223.52" y1="40.64" x2="223.52" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="38.1" x2="218.44" y2="7.62" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="DSR_DIR" gate="G$1" pin="1"/>
 <pinref part="GND74" gate="1" pin="GND"/>
-<wire x1="213.36" y1="12.7" x2="213.36" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="10.16" x2="208.28" y2="7.62" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U2" gate="U1" pin="GND"/>
@@ -26992,6 +27000,26 @@ to the GNSS antenna</text>
 <pinref part="GND21" gate="1" pin="GND"/>
 <pinref part="C26" gate="G$1" pin="2"/>
 <wire x1="10.16" y1="243.84" x2="10.16" y2="246.38" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND23" gate="1" pin="GND"/>
+<pinref part="R17" gate="G$1" pin="1"/>
+<wire x1="251.46" y1="12.7" x2="251.46" y2="7.62" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="IC2" gate="G$1" pin="!OE"/>
+<wire x1="243.84" y1="20.32" x2="246.38" y2="20.32" width="0.1524" layer="91"/>
+<pinref part="GND29" gate="1" pin="GND"/>
+<wire x1="246.38" y1="20.32" x2="246.38" y2="7.62" width="0.1524" layer="91"/>
+<pinref part="IC2" gate="G$1" pin="GND"/>
+<wire x1="243.84" y1="22.86" x2="246.38" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="246.38" y1="22.86" x2="246.38" y2="20.32" width="0.1524" layer="91"/>
+<junction x="246.38" y="20.32"/>
+</segment>
+<segment>
+<pinref part="R19" gate="G$1" pin="1"/>
+<wire x1="251.46" y1="58.42" x2="251.46" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="GND30" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="3.3V" class="0">
@@ -27083,8 +27111,8 @@ to the GNSS antenna</text>
 <segment>
 <pinref part="SUPPLY31" gate="G$1" pin="3.3V"/>
 <pinref part="IC1" gate="G$1" pin="VCCB"/>
-<wire x1="248.92" y1="81.28" x2="259.08" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="259.08" y1="81.28" x2="259.08" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="243.84" y1="81.28" x2="254" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="254" y1="81.28" x2="254" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY38" gate="G$1" pin="3.3V"/>
@@ -27104,9 +27132,9 @@ to the GNSS antenna</text>
 </segment>
 <segment>
 <pinref part="IC2" gate="G$1" pin="VCCB"/>
-<wire x1="248.92" y1="38.1" x2="259.08" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="243.84" y1="35.56" x2="254" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="SUPPLY58" gate="G$1" pin="3.3V"/>
-<wire x1="259.08" y1="38.1" x2="259.08" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="254" y1="35.56" x2="254" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U2" gate="U1" pin="VCC"/>
@@ -27651,12 +27679,12 @@ to the GNSS antenna</text>
 <label x="96.52" y="185.42" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<label x="190.5" y="27.94" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<label x="195.58" y="25.4" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 <pinref part="TP17" gate="G$1" pin="1"/>
-<wire x1="226.06" y1="27.94" x2="208.28" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="208.28" y1="27.94" x2="190.5" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="208.28" y1="22.86" x2="208.28" y2="27.94" width="0.1524" layer="91"/>
-<junction x="208.28" y="27.94"/>
+<wire x1="220.98" y1="25.4" x2="213.36" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="25.4" x2="195.58" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="38.1" x2="213.36" y2="25.4" width="0.1524" layer="91"/>
+<junction x="213.36" y="25.4"/>
 <pinref part="IC2" gate="G$1" pin="A4"/>
 </segment>
 </net>
@@ -27667,12 +27695,12 @@ to the GNSS antenna</text>
 <label x="96.52" y="182.88" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<label x="190.5" y="30.48" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<label x="195.58" y="27.94" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 <pinref part="TP16" gate="G$1" pin="1"/>
-<wire x1="226.06" y1="30.48" x2="203.2" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="203.2" y1="30.48" x2="190.5" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="203.2" y1="22.86" x2="203.2" y2="30.48" width="0.1524" layer="91"/>
-<junction x="203.2" y="30.48"/>
+<wire x1="220.98" y1="27.94" x2="208.28" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="27.94" x2="195.58" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="38.1" x2="208.28" y2="27.94" width="0.1524" layer="91"/>
+<junction x="208.28" y="27.94"/>
 <pinref part="IC2" gate="G$1" pin="A3"/>
 </segment>
 </net>
@@ -27683,12 +27711,12 @@ to the GNSS antenna</text>
 <label x="96.52" y="180.34" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<label x="190.5" y="33.02" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<label x="195.58" y="30.48" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 <pinref part="TP15" gate="G$1" pin="1"/>
-<wire x1="226.06" y1="33.02" x2="198.12" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="198.12" y1="33.02" x2="190.5" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="198.12" y1="22.86" x2="198.12" y2="33.02" width="0.1524" layer="91"/>
-<junction x="198.12" y="33.02"/>
+<wire x1="220.98" y1="30.48" x2="203.2" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="30.48" x2="195.58" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="38.1" x2="203.2" y2="30.48" width="0.1524" layer="91"/>
+<junction x="203.2" y="30.48"/>
 <pinref part="IC2" gate="G$1" pin="A2"/>
 </segment>
 </net>
@@ -27699,12 +27727,12 @@ to the GNSS antenna</text>
 <label x="96.52" y="177.8" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<label x="190.5" y="35.56" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<label x="195.58" y="33.02" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 <pinref part="TP14" gate="G$1" pin="1"/>
-<wire x1="226.06" y1="35.56" x2="193.04" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="193.04" y1="35.56" x2="190.5" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="193.04" y1="22.86" x2="193.04" y2="35.56" width="0.1524" layer="91"/>
-<junction x="193.04" y="35.56"/>
+<wire x1="220.98" y1="33.02" x2="198.12" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="33.02" x2="195.58" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="38.1" x2="198.12" y2="33.02" width="0.1524" layer="91"/>
+<junction x="198.12" y="33.02"/>
 <pinref part="IC2" gate="G$1" pin="A1"/>
 </segment>
 </net>
@@ -27727,9 +27755,9 @@ to the GNSS antenna</text>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="VCCA"/>
-<wire x1="248.92" y1="83.82" x2="254" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="243.84" y1="83.82" x2="248.92" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="SUPPLY56" gate="G$1" pin="VCCIO"/>
-<wire x1="254" y1="86.36" x2="254" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="248.92" y1="86.36" x2="248.92" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY35" gate="G$1" pin="VCCIO"/>
@@ -27754,33 +27782,33 @@ to the GNSS antenna</text>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="DIR1"/>
-<wire x1="226.06" y1="83.82" x2="220.98" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="83.82" x2="215.9" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="SUPPLY55" gate="G$1" pin="VCCIO"/>
-<wire x1="220.98" y1="83.82" x2="220.98" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="83.82" x2="215.9" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="DIR3"/>
-<wire x1="226.06" y1="68.58" x2="220.98" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="220.98" y1="68.58" x2="220.98" y2="83.82" width="0.1524" layer="91"/>
-<junction x="220.98" y="83.82"/>
+<wire x1="220.98" y1="68.58" x2="215.9" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="68.58" x2="215.9" y2="83.82" width="0.1524" layer="91"/>
+<junction x="215.9" y="83.82"/>
 </segment>
 <segment>
 <pinref part="IC2" gate="G$1" pin="VCCA"/>
-<wire x1="248.92" y1="40.64" x2="254" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="243.84" y1="38.1" x2="248.92" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="SUPPLY57" gate="G$1" pin="VCCIO"/>
-<wire x1="254" y1="40.64" x2="254" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="248.92" y1="38.1" x2="248.92" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IC2" gate="G$1" pin="DIR2"/>
-<wire x1="226.06" y1="38.1" x2="220.98" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="35.56" x2="215.9" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="SUPPLY59" gate="G$1" pin="VCCIO"/>
-<wire x1="220.98" y1="38.1" x2="220.98" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="35.56" x2="215.9" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="IC2" gate="G$1" pin="DIR3"/>
-<wire x1="226.06" y1="25.4" x2="220.98" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="220.98" y1="25.4" x2="220.98" y2="38.1" width="0.1524" layer="91"/>
-<junction x="220.98" y="38.1"/>
+<wire x1="220.98" y1="22.86" x2="215.9" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="22.86" x2="215.9" y2="35.56" width="0.1524" layer="91"/>
+<junction x="215.9" y="35.56"/>
 <pinref part="DSR_DIR" gate="G$1" pin="3"/>
-<wire x1="213.36" y1="22.86" x2="213.36" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="213.36" y1="25.4" x2="220.98" y2="25.4" width="0.1524" layer="91"/>
-<junction x="220.98" y="25.4"/>
+<wire x1="208.28" y1="20.32" x2="208.28" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="22.86" x2="215.9" y2="22.86" width="0.1524" layer="91"/>
+<junction x="215.9" y="22.86"/>
 </segment>
 <segment>
 <pinref part="J5" gate="G$1" pin="5"/>
@@ -28140,7 +28168,7 @@ to the GNSS antenna</text>
 <net name="TX" class="0">
 <segment>
 <label x="254" y="76.2" size="1.27" layer="95" font="vector" xref="yes"/>
-<wire x1="248.92" y1="76.2" x2="254" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="243.84" y1="76.2" x2="254" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="B2"/>
 </segment>
 <segment>
@@ -28163,7 +28191,7 @@ to the GNSS antenna</text>
 <net name="CTS" class="0">
 <segment>
 <label x="254" y="73.66" size="1.27" layer="95" font="vector" xref="yes"/>
-<wire x1="248.92" y1="73.66" x2="254" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="243.84" y1="73.66" x2="254" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="B3"/>
 </segment>
 <segment>
@@ -28180,8 +28208,12 @@ to the GNSS antenna</text>
 <net name="RTS" class="0">
 <segment>
 <label x="254" y="71.12" size="1.27" layer="95" font="vector" xref="yes"/>
-<wire x1="248.92" y1="71.12" x2="254" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="B4"/>
+<pinref part="R19" gate="G$1" pin="2"/>
+<wire x1="243.84" y1="71.12" x2="251.46" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="251.46" y1="71.12" x2="251.46" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="254" y1="71.12" x2="251.46" y2="71.12" width="0.1524" layer="91"/>
+<junction x="251.46" y="71.12"/>
 </segment>
 <segment>
 <label x="322.58" y="71.12" size="1.27" layer="95" font="vector" xref="yes"/>
@@ -28197,7 +28229,7 @@ to the GNSS antenna</text>
 <net name="RX" class="0">
 <segment>
 <label x="254" y="78.74" size="1.27" layer="95" font="vector" xref="yes"/>
-<wire x1="248.92" y1="78.74" x2="254" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="243.84" y1="78.74" x2="254" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="B1"/>
 </segment>
 <segment>
@@ -28219,9 +28251,13 @@ to the GNSS antenna</text>
 </net>
 <net name="DTR" class="0">
 <segment>
-<label x="254" y="35.56" size="1.27" layer="95" font="vector" xref="yes"/>
-<wire x1="248.92" y1="35.56" x2="254" y2="35.56" width="0.1524" layer="91"/>
+<label x="256.54" y="33.02" size="1.27" layer="95" font="vector" xref="yes"/>
+<wire x1="243.84" y1="33.02" x2="251.46" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="IC2" gate="G$1" pin="B1"/>
+<pinref part="R17" gate="G$1" pin="2"/>
+<wire x1="251.46" y1="33.02" x2="251.46" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="256.54" y1="33.02" x2="251.46" y2="33.02" width="0.1524" layer="91"/>
+<junction x="251.46" y="33.02"/>
 </segment>
 <segment>
 <label x="322.58" y="68.58" size="1.27" layer="95" font="vector" xref="yes"/>
@@ -28241,8 +28277,8 @@ to the GNSS antenna</text>
 </net>
 <net name="DCD" class="0">
 <segment>
-<label x="254" y="33.02" size="1.27" layer="95" font="vector" xref="yes"/>
-<wire x1="248.92" y1="33.02" x2="254" y2="33.02" width="0.1524" layer="91"/>
+<label x="256.54" y="30.48" size="1.27" layer="95" font="vector" xref="yes"/>
+<wire x1="243.84" y1="30.48" x2="256.54" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="IC2" gate="G$1" pin="B2"/>
 </segment>
 <segment>
@@ -28263,8 +28299,8 @@ to the GNSS antenna</text>
 </net>
 <net name="RI" class="0">
 <segment>
-<label x="254" y="30.48" size="1.27" layer="95" font="vector" xref="yes"/>
-<wire x1="248.92" y1="30.48" x2="254" y2="30.48" width="0.1524" layer="91"/>
+<label x="256.54" y="27.94" size="1.27" layer="95" font="vector" xref="yes"/>
+<wire x1="243.84" y1="27.94" x2="256.54" y2="27.94" width="0.1524" layer="91"/>
 <pinref part="IC2" gate="G$1" pin="B3"/>
 </segment>
 <segment>
@@ -28285,8 +28321,8 @@ to the GNSS antenna</text>
 </net>
 <net name="DSR" class="0">
 <segment>
-<label x="254" y="27.94" size="1.27" layer="95" font="vector" xref="yes"/>
-<wire x1="248.92" y1="27.94" x2="254" y2="27.94" width="0.1524" layer="91"/>
+<label x="256.54" y="25.4" size="1.27" layer="95" font="vector" xref="yes"/>
+<wire x1="243.84" y1="25.4" x2="256.54" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="IC2" gate="G$1" pin="B4"/>
 </segment>
 <segment>
@@ -28373,10 +28409,10 @@ to the GNSS antenna</text>
 <net name="N$23" class="0">
 <segment>
 <pinref part="DSR_DIR" gate="G$1" pin="2"/>
-<wire x1="218.44" y1="17.78" x2="220.98" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="220.98" y1="17.78" x2="220.98" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="15.24" x2="215.9" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="15.24" x2="215.9" y2="20.32" width="0.1524" layer="91"/>
 <pinref part="IC2" gate="G$1" pin="DIR4"/>
-<wire x1="220.98" y1="22.86" x2="226.06" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="20.32" x2="220.98" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$43" class="0">
@@ -28397,12 +28433,12 @@ to the GNSS antenna</text>
 <wire x1="68.58" y1="175.26" x2="66.04" y2="175.26" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<label x="198.12" y="76.2" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<label x="195.58" y="76.2" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 <pinref part="TP2" gate="G$1" pin="1"/>
-<wire x1="226.06" y1="76.2" x2="205.74" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="205.74" y1="76.2" x2="198.12" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="205.74" y1="66.04" x2="205.74" y2="76.2" width="0.1524" layer="91"/>
-<junction x="205.74" y="76.2"/>
+<wire x1="220.98" y1="76.2" x2="203.2" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="76.2" x2="195.58" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="83.82" x2="203.2" y2="76.2" width="0.1524" layer="91"/>
+<junction x="203.2" y="76.2"/>
 <pinref part="IC1" gate="G$1" pin="A2"/>
 </segment>
 </net>
@@ -28413,12 +28449,12 @@ to the GNSS antenna</text>
 <wire x1="68.58" y1="167.64" x2="66.04" y2="167.64" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<label x="198.12" y="78.74" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<label x="195.58" y="78.74" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 <pinref part="TP1" gate="G$1" pin="1"/>
-<wire x1="226.06" y1="78.74" x2="200.66" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="200.66" y1="78.74" x2="198.12" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="200.66" y1="66.04" x2="200.66" y2="78.74" width="0.1524" layer="91"/>
-<junction x="200.66" y="78.74"/>
+<wire x1="220.98" y1="78.74" x2="198.12" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="78.74" x2="195.58" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="83.82" x2="198.12" y2="78.74" width="0.1524" layer="91"/>
+<junction x="198.12" y="78.74"/>
 <pinref part="IC1" gate="G$1" pin="A1"/>
 </segment>
 </net>
@@ -28429,12 +28465,12 @@ to the GNSS antenna</text>
 <label x="96.52" y="175.26" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<label x="198.12" y="71.12" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<label x="195.58" y="71.12" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 <pinref part="TP4" gate="G$1" pin="1"/>
-<wire x1="226.06" y1="71.12" x2="215.9" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="215.9" y1="71.12" x2="198.12" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="215.9" y1="66.04" x2="215.9" y2="71.12" width="0.1524" layer="91"/>
-<junction x="215.9" y="71.12"/>
+<wire x1="220.98" y1="71.12" x2="213.36" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="71.12" x2="195.58" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="83.82" x2="213.36" y2="71.12" width="0.1524" layer="91"/>
+<junction x="213.36" y="71.12"/>
 <pinref part="IC1" gate="G$1" pin="A4"/>
 </segment>
 </net>
@@ -28445,12 +28481,12 @@ to the GNSS antenna</text>
 <label x="96.52" y="172.72" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<label x="198.12" y="73.66" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<label x="195.58" y="73.66" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 <pinref part="TP3" gate="G$1" pin="1"/>
-<wire x1="226.06" y1="73.66" x2="210.82" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="210.82" y1="73.66" x2="198.12" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="210.82" y1="66.04" x2="210.82" y2="73.66" width="0.1524" layer="91"/>
-<junction x="210.82" y="73.66"/>
+<wire x1="220.98" y1="73.66" x2="208.28" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="73.66" x2="195.58" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="83.82" x2="208.28" y2="73.66" width="0.1524" layer="91"/>
+<junction x="208.28" y="73.66"/>
 <pinref part="IC1" gate="G$1" pin="A3"/>
 </segment>
 </net>
