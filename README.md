@@ -1,12 +1,6 @@
 # SparkFun LTE GNSS Breakout - SARA-R510M8S
 
-A breakout for the u-blox SARA-R510M8S cellular LTE GNSS combo module with secure cloud.
-
-![Top.png](img/Top.png)
-
-![Bottom.png](img/Bottom.png)
-
-![Dimensions.png](img/Dimensions.png)
+[![LTE GNSS Breakout - SARA-R5 (GPS-18031](https://cdn.sparkfun.com/assets/parts/1/7/2/6/0/18031-SparkFun_LTE_GNSS_Breakout_-_SARA-R5-01.jpg)](https://www.sparkfun.com/products/18031)
 
 The u-blox SARA-R510M8S module is a secure cloud LTE Cat M1, LTE Cat NB2 solution based on u-blox's UBX-R5 cellular chipset.
 The SARA-R510M8S has an integrated u-blox M8 GNSS receiver chip and a separate GNSS antenna interface.
@@ -14,6 +8,17 @@ The SARA-R510M8S has an integrated u-blox M8 GNSS receiver chip and a separate G
 The SARA-R5's UART interface can be configured into one of five variants, providing connectivity over one or two UARTs. A separate USB port
 provides access to the SARA's trace log for diagnostic purposes. This breakout provides access to all three interfaces (UART1, UART2 and SARA Diag)
 via three separate USB-C connections. All eight 3.3V serial signals are available on a 0.1"-pitch breakout header.
+
+## Repository Contents
+
+- **/Documentation** - Datasheets etc.
+- **/Hardware** - Eagle PCB, SCH and LBR design files. Full schematic in PDF format.
+- **[LICENSE.md](./LICENSE.md)** - License details
+
+## Documentation
+
+- **[SparkFun u-blox SARA-R5 Arduino Library](https://github.com/sparkfun/SparkFun_u-blox_SARA-R5_Arduino_Library)** - Arduino library for the SARA-R5 module.
+- **[Hookup Guide](https://learn.sparkfun.com/tutorials/lte-gnss-breakout---sara-r5-hookup-guide)** - Hookup Guide for the LTE GNSS Breakout - SARA-R5.
 
 ## UART 1 & 2
 
@@ -62,12 +67,6 @@ split pad to optionally control the antenna power via the SARA's GPIO2 pin.
 The GPIO2 pin can be controlled using the **+UGPIOC=23,0,1** command.
 Please see the [AT Commands Manual](./Documents/SARA-R5_ATCommands_(UBX-19047455).pdf) for more details.
 
-## Repository Contents
+## Product Versions
 
-- **/Documentation** - Datasheets etc.
-- **/Hardware** - Eagle PCB, SCH and LBR design files. Full schematic in PDF format.
-- **[LICENSE.md](./LICENSE.md)** - License details
-
-## Arduino Library
-
-- [SparkFun u-blox SARA-R5 Arduino Library](https://github.com/sparkfun/SparkFun_u-blox_SARA-R5_Arduino_Library)
+- [GPS-18031](https://www.sparkfun.com/products/18031) - Initial Release
